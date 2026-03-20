@@ -1,0 +1,484 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>VMCSERVICES - Professional Cleaning Services Melbourne</title> <script src="https://cdn.tailwindcss.com"></script> <style> * { scroll-behavior: smooth; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; } .gradient-bg { background: linear-gradient(to bottom, #eff6ff, #ffffff); } .fade-in { animation: fadeIn 0.6s ease-in; } @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } .shadow-xl-hover { transition: box-shadow 0.3s ease; } .shadow-xl-hover:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); } .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; } .accordion-content.active { max-height: 500px; } .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; } .mobile-menu.active { max-height: 600px; } </style> </head> <body class="bg-white">
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 transition-all duration-300">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">VM</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-gray-900">VMCSERVICES</h1>
+                    <p class="text-xs text-blue-600">Professional Cleaning</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
+<a href="#gallery" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Gallery</a>
+                <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Pricing</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">FAQ</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="tel:+61449547410" class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    <span class="font-medium">📞 +61 449 547 410</span>
+                </a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">Get Free Quote</a>
+            </div>
+            <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu lg:hidden mt-4 border-t border-gray-200 pt-4">
+            <nav class="flex flex-col space-y-3">
+                <a href="#services" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">Services</a>
+<a href="#gallery" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">Gallery</a>
+                <a href="#pricing" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">Pricing</a>
+                <a href="#testimonials" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">Testimonials</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">FAQ</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">Contact</a>
+                <a href="tel:+61449547410" class="text-gray-700 hover:text-blue-600 transition-colors py-2">📞 +61 449 547 410</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg text-center">Get Free Quote</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden gradient-bg">
+<video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="videos/cleaning-bg.mp4" type="video/mp4">
+</video>
+
+<div class="absolute inset-0 bg-black/45 z-0"></div>
+    <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-20"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 fade-in">
+                <div class="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+                    <span>✨ Melbourne's Most Trusted Cleaning Service</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    Your Space,<span class="text-blue-600"> Spotlessly Clean</span>
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed">Professional cleaning services for homes and businesses across Melbourne. Experience the difference of a truly clean space with VMCSERVICES.</p>
+                <div class="flex flex-col sm:flex-row gap-4 text-gray-700">
+                    <div class="flex items-center space-x-2"><span class="text-green-600">✓</span><span class="font-medium">15+ Years Experience</span></div>
+                    <div class="flex items-center space-x-2"><span class="text-green-600">✓</span><span class="font-medium">Fully Insured</span></div>
+                    <div class="flex items-center space-x-2"><span class="text-green-600">✓</span><span class="font-medium">100% Guaranteed</span></div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center">Get Your Free Quote →</a>
+                    <a href="#services" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 rounded-lg transition-all duration-300 text-center">View Our Services</a>
+                </div>
+            </div>
+            <div class="relative fade-in">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+<img src="images/principal/house1.jpg" alt="Residential cleaning Melbourne" class="w-full h-[500px] object-cover rounded-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 max-w-xs">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl">✓</div>
+                        <div>
+                            <p class="font-bold text-2xl text-gray-900">500+</p>
+                            <p class="text-sm text-gray-600">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center text-center space-y-3 p-6 rounded-xl hover:bg-blue-50 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">🏆</div>
+                <h3 class="font-bold text-lg text-gray-900">15+ Years Experience</h3>
+                <p class="text-sm text-gray-600">Serving Melbourne with excellence</p>
+            </div>
+            <div class="flex flex-col items-center text-center space-y-3 p-6 rounded-xl hover:bg-blue-50 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">🛡️</div>
+                <h3 class="font-bold text-lg text-gray-900">Fully Insured</h3>
+                <p class="text-sm text-gray-600">Complete peace of mind</p>
+            </div>
+            <div class="flex flex-col items-center text-center space-y-3 p-6 rounded-xl hover:bg-blue-50 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">🍃</div>
+                <h3 class="font-bold text-lg text-gray-900">Eco-Friendly</h3>
+                <p class="text-sm text-gray-600">Safe for family & pets</p>
+            </div>
+            <div class="flex flex-col items-center text-center space-y-3 p-6 rounded-xl hover:bg-blue-50 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">✅</div>
+                <h3 class="font-bold text-lg text-gray-900">100% Satisfaction</h3>
+                <p class="text-sm text-gray-600">We guarantee our work</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-20 gradient-bg">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Our <span class="text-blue-600">Cleaning Services</span></h2>
+            <p class="text-xl text-gray-600">Comprehensive cleaning solutions tailored to your needs. From homes to construction sites, we've got you covered.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="overflow-hidden rounded-2xl shadow-xl-hover bg-white">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1686178827149-6d55c72d81df?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxob21lJTIwY2xlYW5pbmd8ZW58MHx8fHwxNzczNTUxODgzfDA&ixlib=rb-4.1.0&q=85" alt="Residential Cleaning" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                    <div class="absolute top-4 left-4 w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg text-3xl">🏠</div>
+                    <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">Residential Cleaning</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <p class="text-gray-600 leading-relaxed">Transform your home into a spotless sanctuary. Our expert team handles everything from regular maintenance to deep cleaning.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Weekly/Fortnightly Service</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Deep Cleaning</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Eco-Friendly Products</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Flexible Scheduling</span></li>
+                    </ul>
+                    <a href="#contact" class="block w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white py-3 rounded-lg text-center transition-colors">Get Quote for Residential Cleaning →</a>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-xl-hover bg-white">
+                <div class="relative h-56 overflow-hidden">
+<img src="images/commercial/office1.jpg" alt="Commercial Cleaning">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                    <div class="absolute top-4 left-4 w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg text-3xl">🏢</div>
+                    <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">Commercial Cleaning</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <p class="text-gray-600 leading-relaxed">Keep your business premises immaculate and professional. We ensure a clean, healthy environment for your employees and clients.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Daily/Weekly Plans</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>After-Hours Service</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Sanitization</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Quality Assurance</span></li>
+                    </ul>
+                    <a href="#contact" class="block w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white py-3 rounded-lg text-center transition-colors">Get Quote for Commercial Cleaning →</a>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-xl-hover bg-white">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBjbGVhbmluZ3xlbnwwfHx8fDE3NzM1NTE4ODl8MA&ixlib=rb-4.1.0&q=85" alt="Office Cleaning" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                    <div class="absolute top-4 left-4 w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg text-3xl">💼</div>
+                    <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">Office Cleaning</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <p class="text-gray-600 leading-relaxed">Boost productivity with a pristine workspace. Professional cleaning tailored to modern office environments.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Desk & Workstation Cleaning</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Kitchen & Breakroom</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Bathroom Sanitization</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Floor Care</span></li>
+                    </ul>
+                    <a href="#contact" class="block w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white py-3 rounded-lg text-center transition-colors">Get Quote for Office Cleaning →</a>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-xl-hover bg-white">
+                <div class="relative h-56 overflow-hidden">
+<img src="images/construction/build1.jpg" alt="Construction Cleaning">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                    <div class="absolute top-4 left-4 w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg text-3xl">👷</div>
+                    <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">Construction Cleaning</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <p class="text-gray-600 leading-relaxed">Post-construction cleanup specialists. We handle the mess so you can showcase your completed project.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Debris Removal</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Window Cleaning</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Floor Polishing</span></li>
+                        <li class="flex items-start space-x-2 text-gray-700"><span class="text-blue-600">✓</span><span>Final Touch Details</span></li>
+                    </ul>
+                    <a href="#contact" class="block w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white py-3 rounded-lg text-center transition-colors">Get Quote for Construction Cleaning →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gallery" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+Our <span class="text-blue-600">Gallery</span>
+</h2>
+<p class="text-xl text-gray-600">
+Real results from our cleaning services across Melbourne.
+</p>
+</div>
+
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="group overflow-hidden rounded-2xl shadow-xl-hover">
+<img src="images/gallery1.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+</div>
+
+<div class="group overflow-hidden rounded-2xl shadow-xl-hover">
+<img src="images/gallery2.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+</div>
+
+<div class="group overflow-hidden rounded-2xl shadow-xl-hover">
+<img src="images/gallery3.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+</div>
+
+<div class="group overflow-hidden rounded-2xl shadow-xl-hover">
+<img src="images/gallery4.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+</div>
+
+<div class="group overflow-hidden rounded-2xl shadow-xl-hover">
+<img src="images/gallery5.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+</div>
+
+<div class="group overflow-hidden rounded-2xl shadow-xl-hover">
+<img src="images/gallery6.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+</div>
+
+</div>
+
+</div>
+</section>
+<section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">What Our <span class="text-blue-600">Clients Say</span></h2>
+            <p class="text-xl text-gray-600">Don't just take our word for it. See what our satisfied customers across Melbourne have to say.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl shadow-xl-hover bg-gradient-to-br from-white to-blue-50">
+                <div class="flex space-x-1 mb-4 text-yellow-400">★★★★★</div>
+                <p class="text-gray-700 leading-relaxed mb-6 italic">"VMCSERVICES transformed our home! The team is professional, thorough, and always on time. Couldn't be happier with their service."</p>
+                <div class="flex items-center space-x-3 pt-4 border-t border-gray-200">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">SM</div>
+                    <div>
+                        <p class="font-bold text-gray-900">Sarah Mitchell</p>
+                        <p class="text-sm text-gray-600">Homeowner, Toorak</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8 rounded-2xl shadow-xl-hover bg-gradient-to-br from-white to-blue-50">
+                <div class="flex space-x-1 mb-4 text-yellow-400">★★★★★</div>
+                <p class="text-gray-700 leading-relaxed mb-6 italic">"Our office has never looked better. The team works quietly after hours and the results are outstanding. Highly recommend!"</p>
+                <div class="flex items-center space-x-3 pt-4 border-t border-gray-200">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">DC</div>
+                    <div>
+                        <p class="font-bold text-gray-900">David Chen</p>
+                        <p class="text-sm text-gray-600">Office Manager, CBD Melbourne</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8 rounded-2xl shadow-xl-hover bg-gradient-to-br from-white to-blue-50">
+                <div class="flex space-x-1 mb-4 text-yellow-400">★★★★★</div>
+                <p class="text-gray-700 leading-relaxed mb-6 italic">"Their construction cleaning service is top-notch. They handled our multi-million dollar project with care and precision."</p>
+                <div class="flex items-center space-x-3 pt-4 border-t border-gray-200">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">ET</div>
+                    <div>
+                        <p class="font-bold text-gray-900">Emma Thompson</p>
+                        <p class="text-sm text-gray-600">Property Developer, South Yarra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="py-20 gradient-bg">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Transparent <span class="text-blue-600">Pricing</span></h2>
+            <p class="text-xl text-gray-600">No hidden fees. No surprises. Just honest pricing for exceptional service.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="p-8 rounded-2xl shadow-xl-hover bg-white">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic Clean</h3>
+                    <div class="flex items-baseline justify-center space-x-2">
+                        <span class="text-4xl font-bold text-blue-600">$150</span>
+                        <span class="text-gray-600">per visit</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">2-3 hours of service</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Dusting & vacuuming</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Kitchen & bathroom cleaning</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Mopping floors</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Satisfaction guarantee</span></li>
+                </ul>
+                <a href="#contact" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-900 py-3 rounded-lg text-center transition-colors">Book Now</a>
+            </div>
+            <div class="p-8 rounded-2xl shadow-xl bg-white border-2 border-blue-600 relative transform scale-105">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <div class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">✨ Most Popular</div>
+                </div>
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Deep Clean</h3>
+                    <div class="flex items-baseline justify-center space-x-2">
+                        <span class="text-4xl font-bold text-blue-600">$250</span>
+                        <span class="text-gray-600">per visit</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">4-5 hours of service</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Everything in Basic Clean</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Inside appliances</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Window cleaning</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Detailed wall & skirting</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Eco-friendly products</span></li>
+                </ul>
+                <a href="#contact" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg text-center transition-colors">Book Now</a>
+            </div>
+            <div class="p-8 rounded-2xl shadow-xl-hover bg-white">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Commercial</h3>
+                    <div class="flex items-baseline justify-center space-x-2">
+                        <span class="text-4xl font-bold text-blue-600">Custom</span>
+                        <span class="text-gray-600">quote required</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Tailored to your needs</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Flexible scheduling</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">After-hours available</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Quality assurance checks</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-blue-600">✓</span><span class="text-gray-700">Dedicated account manager</span></li>
+                </ul>
+                <a href="#contact" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-900 py-3 rounded-lg text-center transition-colors">Request Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Frequently Asked <span class="text-blue-600">Questions</span></h2>
+            <p class="text-xl text-gray-600">Got questions? We've got answers. Find everything you need to know about our services.</p>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <div class="bg-blue-50 rounded-lg p-6">
+                <button onclick="toggleAccordion(1)" class="flex justify-between items-center w-full text-left font-semibold text-gray-900 hover:text-blue-600">
+                    <span>Do you provide your own cleaning supplies?</span>
+                    <span id="icon-1" class="text-2xl">+</span>
+                </button>
+                <div id="content-1" class="accordion-content mt-4 text-gray-700">
+                    Yes! We bring all necessary professional-grade cleaning supplies and equipment. If you prefer us to use specific products, we're happy to accommodate.
+                </div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-6">
+                <button onclick="toggleAccordion(2)" class="flex justify-between items-center w-full text-left font-semibold text-gray-900 hover:text-blue-600">
+                    <span>Are you insured and police-checked?</span>
+                    <span id="icon-2" class="text-2xl">+</span>
+                </button>
+                <div id="content-2" class="accordion-content mt-4 text-gray-700">
+                    Absolutely. All our team members are fully insured, police-checked, and professionally trained. Your safety and security are our top priorities.
+                </div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-6">
+                <button onclick="toggleAccordion(3)" class="flex justify-between items-center w-full text-left font-semibold text-gray-900 hover:text-blue-600">
+                    <span>What areas in Melbourne do you service?</span>
+                    <span id="icon-3" class="text-2xl">+</span>
+                </button>
+                <div id="content-3" class="accordion-content mt-4 text-gray-700">
+                    We service all Melbourne metropolitan areas including CBD, Eastern suburbs, Northern suburbs, Western suburbs, and South Eastern suburbs.
+                </div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-6">
+                <button onclick="toggleAccordion(4)" class="flex justify-between items-center w-full text-left font-semibold text-gray-900 hover:text-blue-600">
+                    <span>How do I book a service?</span>
+                    <span id="icon-4" class="text-2xl">+</span>
+                </button>
+                <div id="content-4" class="accordion-content mt-4 text-gray-700">
+                    Simply fill out our contact form, call us directly, or request a quote online. We'll respond within 2 hours during business hours with availability and pricing.
+                </div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-6">
+                <button onclick="toggleAccordion(5)" class="flex justify-between items-center w-full text-left font-semibold text-gray-900 hover:text-blue-600">
+                    <span>What if I'm not satisfied with the service?</span>
+                    <span id="icon-5" class="text-2xl">+</span>
+                </button>
+                <div id="content-5" class="accordion-content mt-4 text-gray-700">
+                    We offer a 100% satisfaction guarantee. If you're not happy with any aspect of our service, we'll return within 24 hours to make it right at no extra charge.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-20 gradient-bg">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Get Your <span class="text-blue-600">Free Quote</span></h2>
+            <p class="text-xl text-gray-600">Ready for a spotlessly clean space? Reach out today and let's discuss your cleaning needs.</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Request a Quote</h3>
+                <form method="POST" action="https://formspree.io/f/xaqppepj" class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
+                        <input type="text" name="name" required placeholder="John Smith" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" required placeholder="04XX XXX XXX" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Service Type *</label>
+                        <select name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Select a service</option>
+                            <option value="Residential Cleaning">Residential Cleaning</option>
+                            <option value="Commercial Cleaning">Commercial Cleaning</option>
+                            <option value="Office Cleaning">Office Cleaning</option>
+                            <option value="Construction Cleaning">Construction Cleaning</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Additional Details</label>
+                        <textarea name="message" rows="4" placeholder="Tell us about your cleaning requirements..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg rounded-lg transition-colors">Send Quote Request →</button>
+                </form>
+            </div>
+            <div class="space-y-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">📞</div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Phone</p>
+                                <a href="tel:+61449547410" class="text-blue-600 hover:text-blue-700 block">+61 449 547 410</a>
+                                <a href="tel:+61450288794" class="text-blue-600 hover:text-blue-700 block">+61 450 288 794</a>
+                                <p class="text-sm text-gray-600 mt-1">Monday - Friday: 7am - 7pm</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">✉️</div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Email</p>
+                                <a href="mailto:vmcservices2@gmail.com" class="text-blue-600 hover:text-blue-700">vmcservices2@gmail.com</a>
+                                <p class="text-sm text-gray-600 mt-1">We reply within 2 hours</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">📍</div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Service Area</p>
+                                <p class="text-gray-600">Greater Melbourne Area</p>
+                                <p class="text-sm text-gray-600 mt-1">CBD, Eastern, Northern, Western & South Eastern suburbs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-bl
+... [stdout truncated] Exit code: 0
